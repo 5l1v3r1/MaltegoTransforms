@@ -29,11 +29,11 @@ def main():
         m.returnOutput()
     
     if num_detections == 'None':
-        scan_results = 'Hash Not Found'
+        scan_results = 'VirusTotal Scan Results: Hash Not Found'
         m.addEntity('maltego.Phrase', scan_results)      
         m.returnOutput()        
     else:
-        scan_results = "%s/%s" % (num_detections, total_scanners)
+        scan_results = "VirusTotal Scan Results: %s/%s" % (num_detections, total_scanners)
         m.addEntity('maltego.Phrase', scan_results)      
         m.returnOutput()             
 
