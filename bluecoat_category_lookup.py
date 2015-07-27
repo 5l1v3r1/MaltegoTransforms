@@ -25,7 +25,6 @@ response_dict = simplejson.loads(r.text)
 
 try:
     categorization = response_dict.get("categorization", {})
-    ratedate = response_dict.get("ratedate", {})
     unrated = response_dict.get("unrated", {})
 except:
     m.returnOutput()
