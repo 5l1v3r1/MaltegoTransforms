@@ -14,7 +14,7 @@ def main():
     
     url = "https://www.virustotal.com/vtapi/v2/file/report"
     parameters = {"resource": hash, 
-                  "apikey": "ENTER_YOUR_VIRUSTOTAL_API_KEY_HERE"}
+                  "apikey": "SET_VT_API_KEY_HERE"}
     
     data = urllib.urlencode(parameters)
     
